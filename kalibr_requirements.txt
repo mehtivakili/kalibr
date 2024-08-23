@@ -1,0 +1,59 @@
+Kalibr Installation Requirements
+==============================
+
+System Information
+------------------
+Operating System: Ubuntu 20.04.6 LTS
+Kernel Version: 5.15.0-117-generic
+Architecture: x86_64
+
+Python Environment
+------------------
+Conda Environment: NOT ACTIVATED (base environment)
+Python Version: Python 3.8.10
+Python Interpreter Path: /usr/bin/python3
+
+System Package Dependencies
+---------------------------
+cmake: INSTALLED
+python3: INSTALLED
+python3-pip: INSTALLED
+python3-dev: INSTALLED
+python3-numpy: INSTALLED
+python3-scipy: INSTALLED
+python3-matplotlib: INSTALLED
+libeigen3-dev: INSTALLED
+libboost-all-dev: INSTALLED
+libopencv-dev: INSTALLED
+libpoco-dev: INSTALLED
+libtbb-dev: INSTALLED
+libblas-dev: INSTALLED
+liblapack-dev: INSTALLED
+ros-noetic-ros-base: INSTALLED
+
+Python Package Dependencies
+---------------------------
+numpy: INSTALLED, Version: 1.17.4
+scipy: INSTALLED, Version: 1.3.3
+matplotlib: INSTALLED, Version: 3.1.2
+pyyaml: INSTALLED, Version: 5.3.1
+setuptools: INSTALLED, Version: 45.2.0
+pip: INSTALLED, Version: 20.0.2
+pycryptodome: INSTALLED, Version: 3.20.0
+rospkg: INSTALLED, Version: 1.5.1
+
+ROS Environment
+---------------
+ROS Distribution: noetic
+ROS_PACKAGE_PATH: /home/mehdi/Documents/kalibr1/src/kalibr/aslam_cv/aslam_time:/home/mehdi/Documents/kalibr1/src/kalibr/catkin_simple:/home/mehdi/Documents/kalibr1/src/kalibr/aslam_offline_calibration/ethz_apriltag2:/home/mehdi/Documents/kalibr1/src/kalibr/opencv2_catkin:/home/mehdi/Documents/kalibr1/src/kalibr/Schweizer-Messer/python_module:/home/mehdi/Documents/kalibr1/src/kalibr/Schweizer-Messer/numpy_eigen:/home/mehdi/Documents/kalibr1/src/kalibr/Schweizer-Messer/sm_common:/home/mehdi/Documents/kalibr1/src/kalibr/Schweizer-Messer/sm_boost:/home/mehdi/Documents/kalibr1/src/kalibr/Schweizer-Messer/sm_logging:/home/mehdi/Documents/kalibr1/src/kalibr/Schweizer-Messer/sm_matrix_archive:/home/mehdi/Documents/kalibr1/src/kalibr/Schweizer-Messer/sm_opencv:/home/mehdi/Documents/kalibr1/src/kalibr/Schweizer-Messer/sm_property_tree:/home/mehdi/Documents/kalibr1/src/kalibr/Schweizer-Messer/sm_random:/home/mehdi/Documents/kalibr1/src/kalibr/Schweizer-Messer/sm_eigen:/home/mehdi/Documents/kalibr1/src/kalibr/Schweizer-Messer/sm_kinematics:/home/mehdi/Documents/kalibr1/src/kalibr/aslam_cv/aslam_cameras:/home/mehdi/Documents/kalibr1/src/kalibr/aslam_cv/aslam_cv_serialization:/home/mehdi/Documents/kalibr1/src/kalibr/aslam_cv/aslam_imgproc:/home/mehdi/Documents/kalibr1/src/kalibr/Schweizer-Messer/sm_timing:/home/mehdi/Documents/kalibr1/src/kalibr/Schweizer-Messer/sm_python:/home/mehdi/Documents/kalibr1/src/kalibr/aslam_cv/aslam_cameras_april:/home/mehdi/Documents/kalibr1/src/kalibr/aslam_cv/aslam_cv_python:/home/mehdi/Documents/kalibr1/src/kalibr/aslam_optimizer/sparse_block_matrix:/home/mehdi/Documents/kalibr1/src/kalibr/aslam_optimizer/aslam_backend:/home/mehdi/Documents/kalibr1/src/kalibr/aslam_optimizer/aslam_backend_expressions:/home/mehdi/Documents/kalibr1/src/kalibr/aslam_optimizer/aslam_backend_python:/home/mehdi/Documents/kalibr1/src/kalibr/aslam_cv/aslam_cv_backend:/home/mehdi/Documents/kalibr1/src/kalibr/aslam_nonparametric_estimation/bsplines:/home/mehdi/Documents/kalibr1/src/kalibr/aslam_nonparametric_estimation/aslam_splines:/home/mehdi/Documents/kalibr1/src/kalibr/aslam_cv/aslam_cv_error_terms:/home/mehdi/Documents/kalibr1/src/kalibr/aslam_cv/aslam_cv_backend_python:/home/mehdi/Documents/kalibr1/src/kalibr/aslam_nonparametric_estimation/bsplines_python:/home/mehdi/Documents/kalibr1/src/kalibr/aslam_nonparametric_estimation/aslam_splines_python:/home/mehdi/Documents/kalibr1/src/kalibr/aslam_incremental_calibration/incremental_calibration:/home/mehdi/Documents/kalibr1/src/kalibr/aslam_incremental_calibration/incremental_calibration_python:/home/mehdi/Documents/kalibr1/src/kalibr/aslam_offline_calibration/kalibr:/opt/ros/noetic/share
+Python interpreter used by ROS: /usr/bin/python3
+
+Additional Information
+----------------------
+1. Ensure that your system is up-to-date before running the installation:
+    sudo apt-get update && sudo apt-get upgrade
+2. Ensure that the Conda environment is deactivated when running this script.
+3. The 'kalibr' package is expected to be installed in the following ROS workspace:
+    ~/Documents/kalibr1
+4. After installing all dependencies, remember to source the workspace setup file:
+    source ~/Documents/kalibr1/devel/setup.bash
